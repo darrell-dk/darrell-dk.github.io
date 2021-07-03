@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <title>课程设计</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.19/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.19/"></script>
+
+</head>
+
+
+<body>
+<div id="topic"><h1>二〇一一年至二〇一五年中国省会城市人口分布图</h1></div>
+
+<div id="viewDiv" ></div>
+<div  id="viewDiv2" ></div>
+<div id="coordinates" ></div >
+<div id="echarts_div">
+<div id="echarts" style="background: sandybrown;"></div>
+</div>
+<div id="LayerList_Div">
+    <script src="main.js"></script>
+
+    <div class="a1" > <img src="国旗.jfif" style="width: 80px">
+    <div class="a2" style="  margin-top:5px;">
+    <fieldset style="background: white" >
+        <legend>图层</legend>
+        <p id="remove_arcgis-topographic">
+            <input type="button" onclick="removeOption1()" value="DEL" style="background: white;border-radius: 3em ">
+            <input type="radio" name="BaseLayer" id="arcgis-topographic">
+            Topographic图层
+        </p>
+        <p id="remove_gray">
+            <input type="button" onclick="removeOption2()" value="DEL" style="background: white;border-radius: 3em ">
+            <input type="radio" name="BaseLayer" id="gray">
+            Gray图层
+        </p>
+        <p id="remove_streets">
+            <input type="button" onclick="removeOption3()" value="DEL" style="background: white;border-radius: 3em ">
+            <input type="radio" name="BaseLayer" id="streets">
+            Streets图层
+        </p>
+        <p id="remove_hybrid">
+            <input type="button" onclick="removeOption4()" value="DEL" style="background: white;border-radius: 3em ">
+            <input type="radio" name="BaseLayer" id="hybrid">
+            Imagerys图层
+        </p>
+    </fieldset>
+    <fieldset style=" background: white">
+        <legend>要素</legend>
+
+        <p id="remove_e">
+            <input type="button" onclick="removeOption5()" value="DEL" style="background: white;border-radius: 3em ">
+            <input type="checkbox" onclick="Earthquakes_onclick(this)" >2011年年平均人口数
+        </p>
+        <p id="remove_2012">
+            <input type="button" onclick="removeOption2012()" value="DEL" style="background: white;border-radius: 3em ">
+            <input type="checkbox" onclick="url2012_onclick(this)" >2012年年平均人口数
+        </p>
+        <p id="remove_2013">
+            <input type="button" onclick="removeOption2013()" value="DEL" style="background: white;border-radius: 3em ">
+            <input type="checkbox" onclick="url2013_onclick(this)" >2013年年平均人口数
+        </p>
+        <p id="remove_2014">
+            <input type="button" onclick="removeOption2014()" value="DEL" style="background: white;border-radius: 3em ">
+            <input type="checkbox" onclick="url2014_onclick(this)" >2014年年平均人口数
+        </p>
+        <p id="remove_2015">
+            <input type="button" onclick="removeOption2015()" value="DEL" style="background: white;border-radius: 3em ">
+            <input type="checkbox" onclick="url2015_onclick(this)" >2015年年平均人口数
+        </p>
+        <p id="remove_rate">
+            <input type="button" onclick="removeOptionrate()" value="DEL" style="background: white;border-radius: 3em ">
+            <input type="checkbox" onclick="rate_onclick(this)" >2011至2015人口比例
+        </p>
+        <p id="remove_w">
+            <input type="button" onclick="removeOption6()" value="DEL" style="background: white;border-radius: 3em " >
+            <input type="checkbox" onclick="WorldCities_onclick(this)">中国省会城市
+        </p>
+        <p id="remove_c">
+            <input type="button" onclick="removeOption7()" value="DEL" style="background: white;border-radius: 3em ">
+            <input type="checkbox" onclick="Chinaprovince_onclick(this)">中国各省份
+        </p>
+
+    </fieldset>
+</div></div>
+</div>
+
+<div id="echarts2_div" >
+    <div id="echarts2" ></div>
+</div>
+
+</body>
+</html>
