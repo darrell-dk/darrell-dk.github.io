@@ -1,0 +1,90 @@
+html,
+body,
+
+#viewDiv {
+    height: 100%;
+    width: 65%;
+    position: fixed;
+    top:0;
+    left:0;
+    border:1px solid #000;
+}
+#viewDiv2 {
+    height: 40%;
+    width: 25%;
+    position: fixed;
+    bottom:0;
+    right:35%;
+    border:1px solid #000;
+}
+#LayerList_Div {
+    position: absolute;
+    top:90px;
+    left: 0px;
+    width: 250px;
+    height:650px;
+
+    z-index: 9;
+}
+#coordinates {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    width: 500px;
+    height: 20px;
+    background: white;
+    z-index: 99;
+}
+.a1{}
+.a2{
+    display:none;
+}
+.a1:hover .a2{display:block;}
+
+#echarts {
+    height: 100%;
+    width: 100%;
+}
+#echarts_div{
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    top:0;
+    right:5%;
+    border:1px solid #000;
+}
+#echarts2{
+    height: 100%;
+    width: 100%;
+}
+#echarts2_div{
+    height: 40%;
+    width: 20%;
+    position: fixed;
+    top:40px;
+    right:5%;
+
+}
+#topic{
+    height: 100%;
+    width:5%;
+    position: fixed;
+    top:0%;
+    right:0%;
+    background: coral;
+    border:1px solid #000;
+}
+h1{
+    margin: 0 auto;
+
+    writing-mode: vertical-lr;
+    writing-mode: tb-lr;
+}
+#button{
+    background: white;
+    border-radius: 3em;
+    /*top:35px;*/
+    /*right:0px;*/
+    z-index:1;
+    position: fixed;
+}
